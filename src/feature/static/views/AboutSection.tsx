@@ -20,12 +20,17 @@ const AboutSection = () => {
             </div>
             <h2 className="text-[48px] font-lovelo">About me</h2>
             <Separator />
-            <p className="pl-4">
-              By binding methods or using arrow functions, you ensure that this
-              points to the correct context, preventing this from being
-              undefined at runtime. This should address the error. By binding
-              methods or using arrow functions, you ensure that this points to
-              the corre.
+            <p className="pl-4 ">
+              I am a full-stack developer with a passion for web and mobile
+              technologies. Recently graduating with a Bachelor of Science in
+              Computer Science, I've gained significant experience in software
+              development, specializing in the MERN stack and modern web
+              frameworks. Proficient in JavaScript, TypeScript, React Native,
+              and various UI libraries, I've successfully completed multiple
+              freelance projects, managing them from conception to deployment.
+              With a keen interest in frontend design and continuous learning,
+              I'm always eager to take on new challenges in software
+              development.
             </p>
           </div>
         </Wrapper>
