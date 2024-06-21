@@ -1,4 +1,4 @@
-import Wrapper from "@/components/layout/container/Wrapper";
+import ScrolledAnimation from "@/components/effects/ScrolledAnimation";
 import Xstack from "@/components/layout/container/Xstack";
 import YStack from "@/components/layout/container/YStack";
 import { Badge } from "@/components/ui/badge";
@@ -8,22 +8,20 @@ import { Calendar, Star, UserRound, Users } from "lucide-react";
 const ProjectSection = () => {
   return (
     <section className="min-h-screen">
-      <div className="h-screen flex justify-center items-center flex-col">
-        <h2 className="text-[64px] font-holiday ">Projects</h2>
-        <h1 className="text-[84px] font-lovelo">Selected Works</h1>
-      </div>
+      <ScrolledAnimation>
+        <div className="flex  items-center flex-col">
+          <h2 className="text-[64px] font-holiday ">Projects</h2>
+          <h1 className="text-[84px] font-lovelo">Selected Works</h1>
+        </div>
+      </ScrolledAnimation>
 
-      <div>// Ring</div>
-
-      <Wrapper className="flex justify-center items-center flex-col">
-        <YStack className="gap-[48px]">
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-        </YStack>
-      </Wrapper>
+      <YStack className="gap-[48px]">
+        <ProjectCard />
+        <ProjectCard />
+        <ProjectCard />
+        <ProjectCard />
+        <ProjectCard />
+      </YStack>
     </section>
   );
 };

@@ -84,3 +84,7 @@
   font-family: "Holiday";
   src: url("./assets/font/holiday/HolidayFree.otf");
 }
+
+* {
+  cursor: default;
+}
