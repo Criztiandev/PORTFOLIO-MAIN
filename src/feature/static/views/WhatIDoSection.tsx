@@ -1,6 +1,6 @@
 const WhatIDoSection = () => {
   return (
-    <section className="min-h-screen relative cursor-default flex justify-center flex-col gap-4 ">
+    <section className="min-h-screen relative cursor-default flex justify-center flex-col gap-4 my-[400px] ">
       <h2 className="text-[32px] font-holiday pl-[48px] ">What I do</h2>
 
       <div className="flex flex-col gap-4 border-t">
@@ -15,9 +15,6 @@ const WhatIDoSection = () => {
         </span>
         <span className="pl-[48px]  text-[84px] font-bold font-lovelo border-b">
           Web Design
-        </span>
-        <span className="pl-[48px]  text-[84px] font-bold font-lovelo border-b">
-          Maging Delulu
         </span>
       </div>
     </section>

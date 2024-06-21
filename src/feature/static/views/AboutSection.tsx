@@ -5,7 +5,6 @@ import Wrapper from "@/components/layout/container/Wrapper";
 import HeroImage from "@/assets/image/hero-image.jpg";
 import ExperienceSection from "../components/helper/ExperienceSection";
 import EducationDetailsSection from "../components/helper/EducationDetailsSection";
-import TechnologiesDetailsSection from "../components/helper/TechnologiesDetailsSection";
 
 const AboutSection = () => {
   return (
@@ -34,21 +33,8 @@ const AboutSection = () => {
         <div className="px-[32px] space-y-[48px]">
           <ExperienceSection />
           <EducationDetailsSection />
-          <TechnologiesDetailsSection />
         </div>
       </div>
-
-      {/* <div className=" mt-[200px]">
-        <Card className="w-full h-[750px]"></Card>
-        <Xstack className="justify-end gap-2 mt-4">
-          <Button size="icon" className="rounded-full" variant="outline">
-            <ChevronLeft />
-          </Button>
-          <Button size="icon" className="rounded-full" variant="outline">
-            <ChevronRight />
-          </Button>
-        </Xstack>
-      </div> */}
     </div>
   );
 };

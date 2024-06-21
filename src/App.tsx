@@ -1,16 +1,15 @@
 import Header from "./components/layout/static/Header";
 import AboutSection from "./feature/static/views/AboutSection";
-import Footer from "./feature/static/views/Footer";
 import HeroSection from "./feature/static/views/HeroSection";
 import ProjectSection from "./feature/static/views/ProjectSection";
 import QuotesSection from "./feature/static/views/QuotesSection";
-import Testimonial from "./feature/static/views/Testimonial";
 
 import { motion } from "framer-motion";
 import useCusorMotion from "./hooks/useCusorMotion";
 import { useAtomValue } from "jotai";
 import { cursorAtom } from "./service/atoms/utils.atom";
 import WhatIDoSection from "./feature/static/views/WhatIDoSection";
+import UnderMaintenance from "./feature/static/views/UnderMaintenance";
 
 //TODO: Offset of the mouse when the size is 200 (Important)
 
@@ -30,7 +29,10 @@ function App() {
       </QuotesSection>
       <AboutSection />
       <WhatIDoSection />
-      <ProjectSection />
+
+      <UnderMaintenance />
+
+      {/* <ProjectSection />
       <QuotesSection title="I love">
         Crafting impactful Product and high-end websites tailored for your
         needs.
@@ -40,7 +42,7 @@ function App() {
         Crafting impactful Product and high-end websites tailored for your
         needs.
       </QuotesSection>
-      <Footer />
+      <Footer /> */}
 
       <motion.div
         initial={{

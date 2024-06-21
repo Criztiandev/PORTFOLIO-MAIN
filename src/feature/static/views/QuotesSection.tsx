@@ -10,7 +10,7 @@ interface Props extends PropsWithChildren {
 
 const QuotesSection: FC<Props> = ({ title, children }) => {
   return (
-    <YStack className="my-[400px]">
+    <YStack className="my-[400px]  flex px-[120px]">
       <ScrolledAnimation>
         <h2 className="text-[32px] font-holiday ">{title}</h2>
       </ScrolledAnimation>
