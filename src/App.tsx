@@ -1,7 +1,6 @@
 import Header from "./components/layout/static/Header";
 import AboutSection from "./feature/static/views/AboutSection";
 import HeroSection from "./feature/static/views/HeroSection";
-import ProjectSection from "./feature/static/views/ProjectSection";
 import QuotesSection from "./feature/static/views/QuotesSection";
 
 import { motion } from "framer-motion";
@@ -10,8 +9,6 @@ import { useAtomValue } from "jotai";
 import { cursorAtom } from "./service/atoms/utils.atom";
 import WhatIDoSection from "./feature/static/views/WhatIDoSection";
 import UnderMaintenance from "./feature/static/views/UnderMaintenance";
-
-//TODO: Offset of the mouse when the size is 200 (Important)
 
 function App() {
   const { width, height } = useAtomValue(cursorAtom);
