@@ -2,7 +2,6 @@ import Xstack from "@/components/layout/container/Xstack";
 import YStack from "@/components/layout/container/YStack";
 import { Card } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
-import React from "react";
 
 const Testimonial = () => {
   return (
