@@ -9,34 +9,32 @@ import { Facebook, Github, Instagram, Linkedin } from "lucide-react";
 const HeroSection = () => {
   const setCursorSize = useSetAtom(cursorAtom);
 
-  const handleEnterPerimiter = () => {
+  const handleEnterPerimeter = () => {
     setCursorSize({ width: 200, height: 200, isHovered: true });
   };
 
-  const handleExitrPerimiter = () => {
+  const handleExistPerimeter = () => {
     setCursorSize({ width: 64, height: 64, isHovered: false });
   };
   return (
     <section className="h-screen  relative cursor-default">
       <div className="text-center  h-full flex justify-center items-center flex-col ">
         <div
-          onMouseOver={handleEnterPerimiter}
-          onMouseLeave={handleExitrPerimiter}
+          onMouseOver={handleEnterPerimeter}
+          onMouseLeave={handleExistPerimeter}
         >
-          <ScrolledAnimation>
-            <h2 className="text-[64px] font-holiday text-center  w-full">
-              Hello!
-            </h2>
-          </ScrolledAnimation>
+          <h2 className="text-[42px] font-holiday text-center  w-full">
+            Hello!
+          </h2>
           <ScrolledAnimation delay={0.5}>
-            <SzoopEffect className="text-[130px] font-lovelo ">
+            <SzoopEffect className="font-lovelo text-[74px]">
               I'M CRIZTIAN
             </SzoopEffect>
           </ScrolledAnimation>
         </div>
       </div>
 
-      <div className="absolute bottom-0 left-0 right-0  flex justify-center items-center p-4">
+      <div className="absolute bottom-48 left-0 right-0  flex justify-center items-center p-4">
         <Xstack className="gap-4">
           <Button
             variant="ghost"

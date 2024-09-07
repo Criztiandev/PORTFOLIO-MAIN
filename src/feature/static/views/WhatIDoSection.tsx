@@ -1,21 +1,17 @@
+import { SkillsDataset } from "../data/skill.data";
+import { SkillsData } from "../interface/dataset";
+
 const WhatIDoSection = () => {
   return (
-    <section className="min-h-screen relative cursor-default flex justify-center flex-col gap-4 my-[400px] ">
-      <h2 className="text-[32px] font-holiday pl-[48px] ">What I do</h2>
+    <section className="relative cursor-default flex justify-center flex-col gap-4 my-[200px]">
+      <h2 className="font-holiday text-[24px] px-4">What I do</h2>
 
       <div className="flex flex-col gap-4 border-t">
-        <span className="pl-[48px]  text-[84px] font-bold font-lovelo border-b">
-          Web Developement
-        </span>
-        <span className=" pl-[48px] text-[84px] font-bold font-lovelo border-b">
-          Mobile Development
-        </span>
-        <span className="pl-[48px]  text-[84px] font-bold font-lovelo border-b">
-          Game Development
-        </span>
-        <span className="pl-[48px]  text-[84px] font-bold font-lovelo border-b">
-          Web Design
-        </span>
+        {SkillsDataset.map((skills: SkillsData) => (
+          <span className="text-[42px] font-bold font-lovelo border-b px-4">
+            {skills.title}
+          </span>
+        ))}
       </div>
     </section>
   );

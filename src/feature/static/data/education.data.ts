@@ -1,4 +1,4 @@
-import { EducationDataValue } from "../interrface/dataset";
+import { EducationDataValue } from "../interface/dataset";
 
 export const EducationDataSet: EducationDataValue[] = [
   {

@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import Wrapper from "@/components/layout/container/Wrapper";
 import { FC, PropsWithChildren, useEffect, useRef } from "react";
@@ -29,11 +30,11 @@ const ScrolledAnimation: FC<Props> = ({
     }
   }, [isComponetView]);
 
-  const handleEnterPerimiter = () => {
+  const handleEnterPerimeter = () => {
     setCursorSize({ width: 200, height: 200, isHovered: true });
   };
 
-  const handleExitrPerimiter = () => {
+  const handleExitPermeter = () => {
     setCursorSize({ width: 64, height: 64, isHovered: false });
   };
 
@@ -51,8 +52,8 @@ const ScrolledAnimation: FC<Props> = ({
       >
         <Wrapper
           className="relative flex max-w-screen-xl mx-auto flex-coloverflow-hidden "
-          onMouseOver={handleEnterPerimiter}
-          onMouseLeave={handleExitrPerimiter}
+          onMouseOver={handleEnterPerimeter}
+          onMouseLeave={handleExitPermeter}
         >
           {children}
           <motion.div
@@ -64,9 +65,7 @@ const ScrolledAnimation: FC<Props> = ({
             initial="hidden"
             animate={slideAnimation}
             className="absolute border h-full  w-full bg-black z-20"
-          >
-            i
-          </motion.div>
+          ></motion.div>
         </Wrapper>
       </motion.div>
     </section>

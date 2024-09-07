@@ -1,25 +1,18 @@
 import ScrolledAnimation from "@/components/effects/ScrolledAnimation";
-import Xstack from "@/components/layout/container/Xstack";
 import YStack from "@/components/layout/container/YStack";
-import { Badge } from "@/components/ui/badge";
-import { Card } from "@/components/ui/card";
-import { Calendar, Star, UserRound, Users } from "lucide-react";
+import ProjectCard from "../components/card/ProjectCard";
 
 const ProjectSection = () => {
   return (
-    <section className="min-h-screen">
-      <ScrolledAnimation>
-        <div className="flex  items-center flex-col">
-          <h2 className="text-[64px] font-holiday ">Projects</h2>
-          <h1 className="text-[84px] font-lovelo">Selected Works</h1>
-        </div>
-      </ScrolledAnimation>
+    <section className="">
+      <div className="flex  items-center flex-col mb-8">
+        <h2 className="text-[32px] font-holiday ">Projects</h2>
+        <ScrolledAnimation>
+          <h1 className="text-[48px] font-lovelo">Selected Works</h1>
+        </ScrolledAnimation>
+      </div>
 
-      <YStack className="gap-[48px]">
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
+      <YStack className="gap-[48px] space-y-4">
         <ProjectCard />
       </YStack>
     </section>
@@ -27,41 +20,3 @@ const ProjectSection = () => {
 };
 
 export default ProjectSection;
-
-const ProjectCard = () => {
-  return (
-    <YStack className="max-w-[500px] h-[600px] w-full gap-4">
-      <Card className="rounded-none h-full"></Card>
-      <YStack className=" gap-4 justify-center items-center">
-        <h3 className="font-lovelo text-[24px]">DEBESMSCAT Online Clearance</h3>
-        <Xstack className="gap-3">
-          <Xstack className="gap-2">
-            <Calendar />
-            <span>2010</span>
-          </Xstack>
-
-          <Xstack className="gap-2">
-            <Users />
-            <span>5,000</span>
-          </Xstack>
-
-          <Xstack className="gap-2">
-            <Star />
-            <span>0</span>
-          </Xstack>
-
-          <Xstack className="gap-2">
-            <UserRound />
-            <span>0</span>
-          </Xstack>
-        </Xstack>
-        <Xstack className="gap-2">
-          <Badge>MongDB</Badge>
-          <Badge>ExpressJS</Badge>
-          <Badge>ReactJS</Badge>
-          <Badge>NodeJS</Badge>
-        </Xstack>
-      </YStack>
-    </YStack>
-  );
-};

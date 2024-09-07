@@ -27,3 +27,8 @@ export interface EducationDataValue {
   sy: string;
   keyAchievement: AchievementValue[];
 }
+
+export interface SkillsData {
+  title: string;
+  link: string;
+}

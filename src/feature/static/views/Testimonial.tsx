@@ -1,16 +1,18 @@
-import Xstack from "@/components/layout/container/Xstack";
-import YStack from "@/components/layout/container/YStack";
 import { Card } from "@/components/ui/card";
-import { Separator } from "@/components/ui/separator";
 
 const Testimonial = () => {
   return (
     <section className="flex justify-center items-center flex-col gap-12">
-      <div className="mb-[100px]">
-        <h2 className="text-center text-[48px] font-holiday">Words from</h2>
-        <h1 className="text-[64px] font-lovelo">Happy Clients</h1>
+      <div className="">
+        <h2 className="text-center text-[32px] font-holiday">Words from</h2>
+        <h1 className="text-[48px] font-lovelo">Happy Clients</h1>
       </div>
 
+      <div>
+        <Card className="w-[270px] max-w-[300] max-h-[800px] h-[300px]"></Card>
+      </div>
+
+      {/* 
       <div className="h-[680px] flex justify-end items-end relative">
         <YStack className="absolute max-w-[500px] top-[24px] right-12">
           <h1 className="font-lovelo text-[48px]">
@@ -22,7 +24,6 @@ const Testimonial = () => {
               Criztian Jade Tuplano
             </span>
             <span className="uppercase italic opacity-50 text-[14px] font-semibold">
-              {" "}
               student
             </span>
           </YStack>
@@ -34,7 +35,7 @@ const Testimonial = () => {
           <Card className="w-[270px] max-w-[300] max-h-[800px] h-[300px]"></Card>
           <Card className="w-[270px] max-w-[300] max-h-[800px] h-[300px]"></Card>
         </Xstack>
-      </div>
+      </div> */}
     </section>
   );
 };

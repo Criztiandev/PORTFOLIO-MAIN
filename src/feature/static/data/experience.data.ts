@@ -1,4 +1,4 @@
-import { ExperienceDataValue } from "../interrface/dataset";
+import { ExperienceDataValue } from "../interface/dataset";
 
 export const ExperienceDataSet: ExperienceDataValue[] = [
   {
@@ -20,7 +20,7 @@ export const ExperienceDataSet: ExperienceDataValue[] = [
       {
         id: 2,
         achievement:
-          "Applied various techniques to locate and resolve bugs, optimizing application performance by 15",
+          "Applied various techniques to locate and resolve bugs, optimizing application performance by 15%",
       },
       {
         id: 3,
@@ -49,7 +49,7 @@ export const ExperienceDataSet: ExperienceDataValue[] = [
       {
         id: 2,
         achievement:
-          "Collaborated with project managers, debugged issues, optimized database structures, and participated in code reviews to maint ain high-quality standards",
+          "Collaborated with project managers, debugged issues, optimized database structures, and participated in code reviews to main aim high-quality standards",
       },
     ],
   },
@@ -57,12 +57,12 @@ export const ExperienceDataSet: ExperienceDataValue[] = [
     id: 2,
     title: "Full-Stack Software Freelancer",
     company: "Self Employed",
-    date: "November 2024 - April 2024",
+    date: "November 2023 - Present",
     keyAchievement: [
       {
         id: 0,
         achievement:
-          "Completed over 8 freelance projects, providing custom software solutions using MERN Stack, PHP, MySQL, React Native, Firebase, and Supabase",
+          "Completed over freelance projects, providing custom software solutions using MERN Stack, PHP, MySQL, React Native, Firebase, Pocketbase, ",
       },
       {
         id: 1,

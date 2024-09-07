@@ -1,4 +1,4 @@
-import { ProjectDataValue } from "../interrface/dataset";
+import { ProjectDataValue } from "../interface/dataset";
 
 export const projectDataset: ProjectDataValue[] = [
   {
