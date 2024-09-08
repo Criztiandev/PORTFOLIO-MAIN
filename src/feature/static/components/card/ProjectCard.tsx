@@ -5,7 +5,7 @@ import { Calendar, Star, UserRound, Users } from "lucide-react";
 
 const ProjectCard = () => {
   return (
-    <YStack className="flex justify-center items-center flex-col space-y-4">
+    <YStack className="flex justify-center items-center flex-col space-y-4 border w-screen shrink-0">
       <div className="rounded-none  h-[300px] w-[300px] border"></div>
       <YStack className=" gap-4 justify-center items-center">
         <h3 className="font-lovelo text-[24px]">DEBESMSCAT Online Clearance</h3>
