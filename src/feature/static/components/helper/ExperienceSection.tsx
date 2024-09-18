@@ -9,7 +9,9 @@ const ExperienceSection = () => {
   return (
     <YStack>
       <div>
-        <h2 className="text-[42px] font-lovelo text-center">Experience</h2>
+        <h2 className="text-[42px] font-lovelo text-center md:text-left">
+          Experience
+        </h2>
         <Separator />
       </div>
       <ol className="p-4 space-y-8">

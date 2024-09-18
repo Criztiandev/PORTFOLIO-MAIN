@@ -9,7 +9,9 @@ const EducationDetailsSection = () => {
   return (
     <YStack>
       <div>
-        <h2 className="text-[32px] font-lovelo text-center ">Education</h2>
+        <h2 className="text-[32px] font-lovelo text-center md:text-left ">
+          Education
+        </h2>
         <Separator />
       </div>
       <ul className=" p-4 space-y-8">

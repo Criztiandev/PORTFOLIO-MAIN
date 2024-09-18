@@ -21,8 +21,8 @@ function App() {
 
   return (
     <main className="min-h-screen max-w-screen-xl mx-auto">
-      {/* <Header /> */}
-      {/* <HeroSection />
+      <Header />
+      <HeroSection />
 
       <QuotesSection title="I am">
         a person who focus on producing a high quality products that turns
@@ -31,16 +31,19 @@ function App() {
 
       <AboutSection />
 
-      <WhatIDoSection /> */}
+      <WhatIDoSection />
 
       <ProjectSection />
 
-      {/* <QuotesSection title="I am">
+      <QuotesSection title="I am">
         a person who focus on producing a high quality products that turns
         client idea into a reality
       </QuotesSection>
 
       <Testimonial />
+
+      {/* 
+
 
        */}
 

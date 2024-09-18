@@ -23,18 +23,18 @@ const HeroSection = () => {
           onMouseOver={handleEnterPerimeter}
           onMouseLeave={handleExistPerimeter}
         >
-          <h2 className="text-[42px] font-holiday text-center  w-full">
+          <h2 className="text-[32px] md:text-[48px] font-holiday text-center  w-full">
             Hello!
           </h2>
           <ScrolledAnimation delay={0.5}>
-            <SzoopEffect className="font-lovelo text-[74px]">
+            <SzoopEffect className="font-lovelo text-[60px] md:text-[100px]">
               I'M CRIZTIAN
             </SzoopEffect>
           </ScrolledAnimation>
         </div>
       </div>
 
-      <div className="absolute bottom-48 left-0 right-0  flex justify-center items-center p-4">
+      <div className="absolute bottom-32 left-0 right-0  flex justify-center items-center p-4">
         <Xstack className="gap-4">
           <Button
             variant="ghost"
