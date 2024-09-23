@@ -5,14 +5,17 @@ import ScrolledAnimation from "@/components/effects/ScrolledAnimation";
 import YStack from "@/components/layout/container/YStack";
 
 interface Props extends PropsWithChildren {
-  title: string;
+  title?: string;
+  delay?: number;
 }
 
-const QuotesSection: FC<Props> = ({ title, children }) => {
+const QuotesSection: FC<Props> = ({ title, delay, children }) => {
   return (
-    <YStack className="my-[200px]  flex px-[24px]  lg:px-[100px]">
-      <h2 className="text-[24px] md:text-[32px] font-holiday ">{title}</h2>
-      <ScrolledAnimation delay={0.5}>
+    <YStack className="flex px-[24px]  lg:px-[100px]">
+      {title && (
+        <h2 className="text-[24px] md:text-[32px] font-holiday ">{title}</h2>
+      )}
+      <ScrolledAnimation delay={delay || 0.5}>
         <h1 className="text-[32px] lg:text-[48px]  font-lovelo text-justify break-words ">
           {children}
         </h1>
