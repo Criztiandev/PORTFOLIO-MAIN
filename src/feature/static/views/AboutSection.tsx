@@ -10,7 +10,7 @@ const AboutSection = () => {
   return (
     <div className=" max-w-screen-xl mx-auto ">
       <div className="space-y-[48px]  md:grid md:grid-cols-[35%_auto] md:space-y-0  gap-4">
-        <Wrapper className="h-full ">
+        <Wrapper className="h-full border-r">
           <div className=" flex justify-center items-center flex-col gap-4">
             <div className="border rounded-full overflow-hidden size-[250px]">
               <Avatar className="flex w-full h-full">
